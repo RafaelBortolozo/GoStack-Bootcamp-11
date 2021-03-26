@@ -1,12 +1,11 @@
 # GoStack-Bootcamp-11
 
-## Procedimentos:
-
-1- Instalar todas as dependências: `yarn`
-
-2- Iniciar o servidor: `yarn dev`
-
-**Utilize o Insomnia para realizar as requisições**
+# Ambiente de desenvolvimento
+* NodeJS, Yarn
+* Visual Studio Code (+ dracula theme, material icon theme)
+* Git e Github
+* **Extensões:** JSON viewer, React Dev Tools, Octotree
+* **Ferramentas:** Notion, Whimsical, DevDocs, Insomnia
 
 # Módulo 3 - NodeJS
 ## Comandos
