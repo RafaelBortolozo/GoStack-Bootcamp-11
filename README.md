@@ -71,3 +71,15 @@ Instalar o react e o react-dom, que é a integração do react com a DOM (arvore
 ```jsx
 yarn add react react-dom
 ```
+
+Comando referente ao babel / webpack:
+
+```jsx
+yarn add @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli
+```
+
+Interface de linha de comando babel:
+
+```jsx
+yarn add @babel/cli
+```
