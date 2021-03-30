@@ -83,3 +83,19 @@ Interface de linha de comando babel:
 ```jsx
 yarn add @babel/cli
 ```
+
+Babel-loader, converter código com o babel:
+
+```jsx
+yarn add babel-loader
+```
+
+Live reload do webpack, toda vez que haver alteração no código, o bundle.js será recompilado automaticamente:
+
+```jsx
+yarn add webpack-dev-server -D
+```
+
+```jsx
+yarn webpack serve --mode development
+```
