@@ -51,3 +51,51 @@ yarn add uuidv4
 
 const { uuid, isUuid }= require('uuidv4');
 ```
+
+# Módulo 4 - ReactJS
+## Comandos
+Instalar todas as dependências (caso haver package.json):
+
+```jsx
+yarn
+```
+
+Criar arquivo package.json:
+
+```jsx
+yarn init -y
+```
+
+Instalar o react e o react-dom, que é a integração do react com a DOM (arvore de elementos, HTML):
+
+```jsx
+yarn add react react-dom
+```
+
+Comando referente ao babel / webpack:
+
+```jsx
+yarn add @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli
+```
+
+Interface de linha de comando babel:
+
+```jsx
+yarn add @babel/cli
+```
+
+Babel-loader, converter código com o babel:
+
+```jsx
+yarn add babel-loader
+```
+
+Live reload do webpack, toda vez que haver alteração no código, o bundle.js será recompilado automaticamente:
+
+```jsx
+yarn add webpack-dev-server -D
+```
+
+```jsx
+yarn webpack serve --mode development
+```
