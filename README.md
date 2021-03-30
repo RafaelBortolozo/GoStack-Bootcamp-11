@@ -51,3 +51,23 @@ yarn add uuidv4
 
 const { uuid, isUuid }= require('uuidv4');
 ```
+
+# Módulo 4 - ReactJS
+## Comandos
+Instalar todas as dependências (caso haver package.json):
+
+```jsx
+yarn
+```
+
+Criar arquivo package.json:
+
+```jsx
+yarn init -y
+```
+
+Instalar o react e o react-dom, que é a integração do react com a DOM (arvore de elementos, HTML):
+
+```jsx
+yarn add react react-dom
+```
