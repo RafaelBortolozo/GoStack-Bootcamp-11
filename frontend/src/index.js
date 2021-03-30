@@ -1,5 +1,14 @@
-const soma= (a, b) => {
-    return a + b
-}
+import React from 'react';
+import { render } from 'react-dom';
+import Header from './components/Header';
+import App from './App';
 
-console.log(soma(1, 3))
+render(<Header/>, document.getElementById('header'))
+render(<App/>, document.getElementById('app'))
+
+
+
+
+
+
+
