@@ -124,5 +124,4 @@ Responsável por converter os diferentes tipos de arquivos em um código que o b
 ex: babel-loader, css-loader, img-loader, file-loader
 
 Na imagem abaixo, está a configuração padrão do webpack para projetos React:
-
-<img>
+![Untitled (1)](https://user-images.githubusercontent.com/62819159/113497209-394b1200-94d8-11eb-9dbe-3a6b64612e3e.png)
