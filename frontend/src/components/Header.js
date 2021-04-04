@@ -1,10 +1,12 @@
 import React from 'react';
 
-export default function Header(){
+export default function Header({ title, children }){
     return (
-        <>
-            <h1>Header</h1>
-            <h2>Funcionou :)</h2>
-        </>
+        <header>
+            <h1>{title}</h1>
+            
+            {children}
+        </header>
     )
 }
+
