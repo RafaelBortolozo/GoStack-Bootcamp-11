@@ -6,6 +6,7 @@
     1. [Comandos](#comandosNode)
     2. [API REST](#apiRest)
     3. [Insomnia](#insomnia)
+    4. [Métodos HTTP e requisições](#metodosHttp)
 3. [ReactJS](#reactjs)
     1. [Comandos](#comandosReact)
     2. [Babel / Webpack](#babelWebpack)
@@ -80,6 +81,49 @@ Para cada requisição é necessário passar a URL. Para facilitar a escrita, po
 - No canto superior esquerdo, abra a aba "Manage Environment";
 - Clica no + e selecione "Environment";
 - Adiciona um nome para o seu atalho e edite o código JSON.
+
+## Métodos HTTP e requisições <a name="metodosHttp" />
+Existem diferentes métodos HTTP para acessar rotas:
+
+- GET: buscar informações do back-end;
+- POST: criar uma informação no back-end;
+- PUT/PATCH: alterar uma informação no back-end;
+- DELETE: deletar uma informação no back-end.
+
+Podemos usar o mesmo recurso, porém as rotas devem ser diferentes.
+
+No navegador só é possível ver as rotas com o método get, mas uma forma de visualizar as outras rotas, inclusive o get, é através do **Insomnia**
+
+### Tipos de parâmetros
+
+Os parametros são formas de receber informações do front-end através das requisições. Existe 3 principais tipos de parâmetros:
+
+- Query Params: geralmente usado com filtros e paginação, podemos usar o .query para obter os dados
+- Route Params: identificar recursos na hora de deletar ou atualizar (:id por exemplo), usamos o .params para obter os dados
+- Request Body: conteudo na hora de criar ou editar um recurso, as informações são transmitidas pelo corpo da requisição usando o formato JSON
+
+![Untitled (5)](https://user-images.githubusercontent.com/62819159/113497649-71545400-94dc-11eb-94e1-6f7b5d66edf0.png)
+
+### Request / Response
+
+Request: informações que o **front-end** envia para o **back-end**
+
+response: informações que o **back-end** envia para o **front-end**
+
+### HTTP Codes
+
+Toda requisição exibirá um código HTTP com 3 dígitos numéricos indicando o que ocorreu:
+
+- 1xx: É uma requisição informativa, praticamente nunca é usada
+- 2xx: Requisição feita com sucesso, sem erros
+    - 200: Success
+    - 201: Created
+- 3xx: redirecionamento
+- 4xx: Erros no Cliente
+    - 400: Bad request (faltou alguma informação)
+    - 401: Unauthorized (sem autorização, sem login)
+    - 404: Not Found
+- 5xx: Erros no servidor
 
 # Módulo 4 - ReactJS <a name="reactjs" />
 ## Comandos <a name="comandosReact" />
