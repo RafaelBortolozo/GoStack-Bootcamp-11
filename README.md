@@ -1,11 +1,12 @@
 # GoStack-Bootcamp-11
 
-# Indice
+# Índice
 1. [Ambiente de desenvolvimento](#ambienteDesenvolvimento)
 2. [NodeJS](#nodejs)
     1. [Comandos](#comandosNode)
 3. [ReactJS](#reactjs)
     1. [Comandos](#comandosReact)
+    2. [Babel / Webpack](#babelWebpack)
 
 
 # Ambiente de desenvolvimento <a name="ambienteDesenvolvimento" />
@@ -107,3 +108,22 @@ yarn add webpack-dev-server -D
 ```jsx
 yarn webpack serve --mode development
 ```
+
+## Babel / Webpack <a name="babelWebpack" />
+### Babel
+
+Responsável por converter (transpilar) código javascript moderno para um código que o browser consiga interpretar.
+
+Na imagem abaixo, está a configuração padrão do babel para projetos React:
+
+<img>
+
+### Webpack
+
+Responsável por converter os diferentes tipos de arquivos em um código que o browser entenda, para isso usa-se os *Loaders;*
+
+ex: babel-loader, css-loader, img-loader, file-loader
+
+Na imagem abaixo, está a configuração padrão do webpack para projetos React:
+
+<img>
