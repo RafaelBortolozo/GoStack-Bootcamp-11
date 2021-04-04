@@ -5,6 +5,7 @@
 2. [NodeJS](#nodejs)
     1. [Comandos](#comandosNode)
     2. [API REST](#apiRest)
+    3. [Insomnia](#insomnia)
 3. [ReactJS](#reactjs)
     1. [Comandos](#comandosReact)
     2. [Babel / Webpack](#babelWebpack)
@@ -69,6 +70,16 @@ A requisição é feita por um cliente/browser que tenta acessar uma URL, fazend
 - É possível ter vários front-end usando o mesmo back-end;
 - Protocolo de comunicação padronizado utilizando JSON, diversos dispositivos conseguem usar os serviços da API com pouquíssimas alterações nos códigos.
 
+## Insomnia <a name="insomnia" />
+O insomnia é um aplicativo que mostra os resultados das rotas que usam os métodos http
+
+Após criar uma aba, o próximo passo é criar uma pasta com o mesmo nome do recurso (ex: '/projects', o recurso é projects), dentro dessa pasta ficará todas as requisições que utilizam esse recurso.
+
+Para cada requisição é necessário passar a URL. Para facilitar a escrita, podemos criar atalhos dentro do insomnia. Digamos que não queremos digitar http://localhost:3333:
+
+- No canto superior esquerdo, abra a aba "Manage Environment";
+- Clica no + e selecione "Environment";
+- Adiciona um nome para o seu atalho e edite o código JSON.
 
 # Módulo 4 - ReactJS <a name="reactjs" />
 ## Comandos <a name="comandosReact" />
