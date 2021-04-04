@@ -115,8 +115,7 @@ yarn webpack serve --mode development
 Responsável por converter (transpilar) código javascript moderno para um código que o browser consiga interpretar.
 
 Na imagem abaixo, está a configuração padrão do babel para projetos React:
-
-<img>
+![Untitled](https://user-images.githubusercontent.com/62819159/113497194-fdb04800-94d7-11eb-8fda-66f9901547d1.png)
 
 ### Webpack
 
