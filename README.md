@@ -7,6 +7,7 @@
     2. [API REST](#apiRest)
     3. [Insomnia](#insomnia)
     4. [Métodos HTTP e requisições](#metodosHttp)
+    5. [Middleware](#middleware)
 3. [ReactJS](#reactjs)
     1. [Comandos](#comandosReact)
     2. [Babel / Webpack](#babelWebpack)
@@ -124,6 +125,26 @@ Toda requisição exibirá um código HTTP com 3 dígitos numéricos indicando o
     - 401: Unauthorized (sem autorização, sem login)
     - 404: Not Found
 - 5xx: Erros no servidor
+
+## Middleware <a name="middleware" />
+Middleware é uma função que é um interceptador de requisições, ele consegue interromper uma requisição e alterar os dados da requisição. Ele pode ser acionado em todas as requisições.
+
+Uma função middleware usa os parametros (request, response, next)
+
+Podemos dizer que as rotas também são middleware por conterem request e response
+
+Os middlewares que não são rotas normalmente terão o argumento next, que executa uma rota depois de ter sido acionado
+
+Seu principal objetivo é interceptar uma rota para verificar ou executar uma função essencial.
+
+Podemos usar os middleware passando a função nas rotas, mas tem uma forma mais fácil:
+
+```jsx
+app.use('/projects/:id', validateProjectId) //Exemplo
+```
+
+Ao invés de adicionar o middleware nas rotas, podemos definir qual é o formato da rota, assim o middleware é executado somente nas rotas que tiverem aquele formato informado.
+
 
 # Módulo 4 - ReactJS <a name="reactjs" />
 ## Comandos <a name="comandosReact" />
