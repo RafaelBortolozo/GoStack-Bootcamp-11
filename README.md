@@ -4,6 +4,7 @@
 1. [Ambiente de desenvolvimento](#ambienteDesenvolvimento)
 2. [NodeJS](#nodejs)
     1. [Comandos](#comandosNode)
+    2. [API REST](#apiRest)
 3. [ReactJS](#reactjs)
     1. [Comandos](#comandosReact)
     2. [Babel / Webpack](#babelWebpack)
@@ -60,6 +61,14 @@ yarn add uuidv4
 
 const { uuid, isUuid }= require('uuidv4');
 ```
+## API REST <a name="apiRest" />
+A requisição é feita por um cliente/browser que tenta acessar uma URL, fazendo uma requisição AJAX, que faz a requisição sem recarregar a página e sem perder a conexão. A resposta do servidor vem por meio de uma estrutura de dados (JSON) e o cliente fica responsável por usar essa resposta para montar a aplicação.
+
+## Benefícios dessa API
+
+- É possível ter vários front-end usando o mesmo back-end;
+- Protocolo de comunicação padronizado utilizando JSON, diversos dispositivos conseguem usar os serviços da API com pouquíssimas alterações nos códigos.
+
 
 # Módulo 4 - ReactJS <a name="reactjs" />
 ## Comandos <a name="comandosReact" />
