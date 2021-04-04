@@ -1,32 +1,22 @@
 # GoStack-Bootcamp-11
 
-# Table of contents
-1. [Introduction](#introduction)
-2. [Some paragraph](#paragraph1)
-    1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
+# Indice
+1. [Ambiente de desenvolvimento](#ambienteDesenvolvimento)
+2. [NodeJS](#nodejs)
+    1. [Comandos](#comandosNode)
+3. [ReactJS](#reactjs)
+    1. [Comandos](#comandosReact)
 
-## This is the introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style
 
-## Some paragraph <a name="paragraph1"></a>
-The first paragraph text
-
-### Sub paragraph <a name="subparagraph1"></a>
-This is a sub paragraph, formatted in heading 3 style
-
-## Another paragraph <a name="paragraph2"></a>
-The second paragraph text
-
-# Ambiente de desenvolvimento
+# Ambiente de desenvolvimento <a name="ambienteDesenvolvimento" />
 * NodeJS, Yarn
 * Visual Studio Code (+ dracula theme, material icon theme)
 * Git e Github
 * **Extensões:** JSON viewer, React Dev Tools, Octotree
 * **Ferramentas:** Notion, Whimsical, DevDocs, Insomnia
 
-# Módulo 3 - NodeJS
-## Comandos
+# Módulo 3 - NodeJS <a name="nodejs" />
+## Comandos <a name="comandosNode" />
 Instalar todas as dependências (caso haver package.json):
 
 ```jsx
@@ -70,8 +60,8 @@ yarn add uuidv4
 const { uuid, isUuid }= require('uuidv4');
 ```
 
-# Módulo 4 - ReactJS
-## Comandos
+# Módulo 4 - ReactJS <a name="reactjs" />
+## Comandos <a name="comandosReact" />
 Instalar todas as dependências (caso haver package.json):
 
 ```jsx
