@@ -325,3 +325,22 @@ O módulo "Axios" é responsável por fazer as chamadas na API.
 ```jsx
 yarn add axios
 ```
+
+No React, temos a função useEffect() que será usada para disparar funções quando houver ou não alguma informação alterada. Ela usa 2 parâmetros:
+
+1. A função a ser disparada
+2. Quando disparar
+
+Foi usado o método *get* para pegar os dados da rota *'projects'*. Se der certo, jogue tudo no *response* e seta os projetos com os dados da API.
+
+![Untitled (6)](https://user-images.githubusercontent.com/62819159/113647290-f1a3c200-9660-11eb-8af8-3182c8f9ec8e.png)
+
+Teremos que instalar o módulo "cors" no back-end. O cors é um mecanismo de segurança que pode impedir que os dados do backend sejam compartilhados.
+
+```jsx
+yarn add cors
+```
+
+```jsx
+app.use(cors());
+```
