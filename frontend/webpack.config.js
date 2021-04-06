@@ -20,6 +20,21 @@ module.exports = {
                 use: {
                     loader: 'babel-loader', 
                 }
+            },
+            {
+                test: /\.css$/,
+                exclude: /node_modules/,
+                use: [
+                    { loader: 'style-loader'},
+                    { loader: 'css-loader'}
+                ]
+            },
+            {
+                test: /.*\.(gif|png|jpe?g)$/i, // aceita arquivos gif, png, jpg e jpeg(opcional)
+                                               // a letra "i" é para não dar problema com extensão em letra maiuscula
+                use: {
+                    loader: 'file-loader'
+                }
             }
         ]
     }
