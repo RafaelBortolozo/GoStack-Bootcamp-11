@@ -66,6 +66,16 @@ yarn add uuidv4
 
 const { uuid, isUuid }= require('uuidv4');
 ```
+
+**cors:**  permitir que o nosso front-end consiga acessar os recursos da api:
+
+```jsx
+yarn add cors
+```
+
+```jsx
+app.use(cors());
+```
 ## API REST <a name="apiRest" />
 A requisição é feita por um cliente/browser que tenta acessar uma URL, fazendo uma requisição AJAX, que faz a requisição sem recarregar a página e sem perder a conexão. A resposta do servidor vem por meio de uma estrutura de dados (JSON) e o cliente fica responsável por usar essa resposta para montar a aplicação.
 
