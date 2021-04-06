@@ -13,6 +13,7 @@
     2. [Babel / Webpack](#babelWebpack)
     3. [Conceitos do ReactJS](#conceitosReact)
     4. [CSS](#css)
+    5. [Usando a API](#usandoApi)
 
 # Ambiente de desenvolvimento <a name="ambienteDesenvolvimento" />
 * NodeJS, Yarn
@@ -207,6 +208,12 @@ File-loader:
 yarn add file-loader
 ```
 
+Axios:
+
+```jsx
+yarn add axios
+```
+
 ## Babel / Webpack <a name="babelWebpack" />
 ### Babel
 
@@ -288,9 +295,23 @@ O estado permite que um componente se atualiza na tela quando há uma alteraçã
 Primeiramente, temos que configurar um novo Loader para arquivos CSS, no arquivo de configurações do Webpack.
 
 Depois instale 3 pacotes: *style-loader,* *css-loader* e *file-loader*.
+```jsx
+yarn add style-loader css-loader
+```
+
+```jsx
+yarn add file-loader
+```
 
 *css-loader:* Para interpretar arquivo css e importações.
 
 *style-loader*: injeta o que foi interpretado pelo *css-loader* no HTML. 
 
 file-loader: carregar arquivos para dentro da aplicação.
+
+## Usando a API <a name="usandoApi" />
+O módulo "Axios" é responsável por fazer as chamadas na API.
+
+```jsx
+yarn add axios
+```
