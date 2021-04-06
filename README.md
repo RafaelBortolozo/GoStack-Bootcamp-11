@@ -12,6 +12,7 @@
     1. [Comandos](#comandosReact)
     2. [Babel / Webpack](#babelWebpack)
     3. [Conceitos do ReactJS](#conceitosReact)
+    4. [CSS](#css)
 
 # Ambiente de desenvolvimento <a name="ambienteDesenvolvimento" />
 * NodeJS, Yarn
@@ -194,6 +195,18 @@ yarn add webpack-dev-server -D
 yarn webpack serve --mode development
 ```
 
+Style-loader e css-loader:
+
+```jsx
+yarn add style-loader css-loader
+```
+
+File-loader:
+
+```jsx
+yarn add file-loader
+```
+
 ## Babel / Webpack <a name="babelWebpack" />
 ### Babel
 
@@ -249,3 +262,35 @@ Ambas as informações chegam no componente *Header* em forma de um objeto chama
 - **children:** todas as informações dentro da tag.
 
 ![Untitled (4)](https://user-images.githubusercontent.com/62819159/113497316-3dc3fa80-94d9-11eb-9070-5e4d17b8497d.png)
+
+### Estado
+Imutabilidade: nunca se altera o dado diretamente, deve-se criar uma cópia e daí sim fazer a alteração, observe o exemplo onde a alteração foi feita de forma INDIRETA:
+
+```jsx
+const projects= ['text1', 'text2']
+
+//errado
+projects.push('Novo projeto') 
+
+//correto
+setProjects([...projects, 'Novo projeto'])
+```
+
+map( ): percorre uma variável retornando alguma informação;
+
+Toda iteração no React precisa de uma propriedade chamada key, que dentro dele será informado alguma informação única para cada elemento percorrido, o mais comum é o ID
+
+**dica do Diego:** quando há uma ação acionada pelo usuário, inicia-se o nome da function com "handle" 
+
+O estado permite que um componente se atualiza na tela quando há uma alteração nos dados, sem precisar recarregar a página toda.
+
+## CSS <a name="css" />
+Primeiramente, temos que configurar um novo Loader para arquivos CSS, no arquivo de configurações do Webpack.
+
+Depois instale 3 pacotes: *style-loader,* *css-loader* e *file-loader*.
+
+*css-loader:* Para interpretar arquivo css e importações.
+
+*style-loader*: injeta o que foi interpretado pelo *css-loader* no HTML. 
+
+file-loader: carregar arquivos para dentro da aplicação.
