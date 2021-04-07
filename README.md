@@ -224,6 +224,12 @@ Axios:
 yarn add axios
 ```
 
+Ao utilizar funções Async, precisa instalar um plugin no babel, pois o "preset-env" sozinho não é capaz de interpretar essas funções:
+
+```jsx
+yarn add @babel/plugin-transform-runtime -D
+```
+
 ## Babel / Webpack <a name="babelWebpack" />
 ### Babel
 
