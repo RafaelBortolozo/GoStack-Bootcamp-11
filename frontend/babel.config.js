@@ -4,6 +4,9 @@ module.exports= {
                              //o browser ainda não entende
         
         '@babel/preset-react' //converte código do react
+    ],
+    plugins: [
+        '@babel/plugin-transform-runtime'
     ]
 }
 

@@ -16,12 +16,15 @@ export default function App(){
     // 1. Os dados
     // 2. função de atualização dos dados
 
-    function handleAddProject() {    // dica do Diego: quando há uma função acionada pelo usuario, inicia-se o nome dela com "handle" 
+    async function handleAddProject() {    // dica do Diego: quando há uma função acionada pelo usuario, inicia-se o nome dela com "handle" 
+        const response = await api.post('projects', {
+            title: `Novo projeto ${Date.now()}`,
+            owner: "Rafael Bortolozo"
+        })
 
-        //para alterar a lista de projetos, devemos usar o setProjects
-        setProjects([...projects, `Novo projeto ${Date.now()}`])
+        const project = response.data
 
-        console.log(projects)
+        setProjects([...projects, project])
     }
 
     return (
