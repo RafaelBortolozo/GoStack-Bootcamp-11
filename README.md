@@ -16,6 +16,7 @@
     5. [Usando a API](#usandoApi)
 3. [React Native](#reactNative)
     1. [Comandos](#comandosReactNative)
+    2. [Criando o projeto](#criacaoProjetoRN)
 
 # Ambiente de desenvolvimento <a name="ambienteDesenvolvimento" />
 * NodeJS, Yarn
@@ -355,3 +356,38 @@ app.use(cors());
 
 # Módulo 5 - React Native <a name="reactNative" />
 ## Comandos <a name="comandosReactNative" />
+
+Criar projeto:
+
+```jsx
+npx react-native init NomeDoProjeto
+```
+
+Instalar todas as dependências:
+
+```jsx
+yarn
+```
+
+## Criando o projeto <a name="criacaoProjetoRN" />
+Para criar um projeto react native não precisa instalar o react-native-cli, basta criar um projeto usando o npx:
+
+```jsx
+npx react-native init NomeDoProjeto
+```
+
+Caso ocorrer um erro deste tipo:
+
+```jsx
+npm ERR! código ENOLOCAL
+
+npm ERR! Não foi possível instalar a partir de "seuNome \ AppData \ Roaming \ npm-cache_npx \ 8992" porque não contém um arquivo package.json.
+```
+
+Isso aconteceu por causa do espaço em branco no seu nome de usuário, use o seguinte comando para resolver e tente novamente o código anterior:
+
+```jsx
+npm config set cache C:\tmp\nodejs\npm-cache --global
+```
+
+Se não conseguiu criar o projeto, recomendo seguir a documentação  [https://reactnative.dev/docs/environment-setup](https://reactnative.dev/docs/environment-setup)
