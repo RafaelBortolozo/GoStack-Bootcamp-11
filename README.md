@@ -162,6 +162,30 @@ Ao invés de adicionar o middleware nas rotas, podemos definir qual é o formato
 
 
 # Módulo 4 - ReactJS <a name="reactjs" />
+React é uma biblioteca para construção de interfaces, baseado no conceito de Single-Page-Applications, que permite trocar de tela sem recarregar uma nova página.
+
+- React: biblioteca de construção de interfaces e componentização;
+- ReactJS: React junto com a biblioteca do facebook que manipula o browser;
+- React Native: React junto com a biblioteca que manipula elementos nativos.
+
+### Vantagens
+
+- Organização do código usando componentes, que são todas as partes da página que não são influenciadas com outras áreas (ex: formulário, comentário, lista de comentários, header, footer, etc...), ou seja, se aquela parte for simplesmente removida e o site continuar funcionando, então pode-se transformar aquela parte em componente.
+- Divisão de responsabilidades: O front-end é responsável apenas por construir a interface, as regras de negócio fica para o back-end.
+- Uma API, múltiplos clientes: podemos usar a mesma API para diversos clientes, pois o back-end envia as informações para a construção do front-end usando um formato chamado JSON. Então um dispositivo mobile e um browser conseguem acessar a mesma API, o front-end então fica responsável por pegar o JSON fornecido pela API para construir a interface.
+
+### JSX
+
+Permite escrever código HTML dentro do Javascript. O react permite criarmos nossos próprios componentes.
+
+### Babel / Webpack
+
+- O browser não entende todo esse código (HTML, CSS dentro do javascript). O Babel converte esse código JS de uma forma que o browser entenda;
+- O Webpack tem diversas função, entre elas:
+    - Criação do Bundle, que contém todo o código javascript da aplicação, usando o código do Babel;
+    - Ensinar o Javascript como importar arquivos CSS e outros através dos loaders (css loader, image loader, babel loader, etc...)
+    - Live reload, atualiza a página com as novas alterações
+
 ## Comandos <a name="comandosReact" />
 Instalar todas as dependências (caso haver package.json):
 
@@ -355,6 +379,20 @@ app.use(cors());
 ```
 
 # Módulo 5 - React Native <a name="reactNative" />
+- React Native é uma versão do React para desenvolvimento mobile.
+- O mesmo código funciona em multiplataformas, podendo manipular cada plataforma de forma diferente.
+- A interface roda de forma nativa, usando Java e Objective C.
+- O código não é transpilado, é injetado no dispositivo uma dependência em que o dispositivo passa a interpretar javascript
+- React Native tem uma sintaxe parecida com o ReactJS:
+
+![Untitled (7)](https://user-images.githubusercontent.com/62819159/114119419-fcf52880-98c0-11eb-9ba6-45c1c9f6ed23.png)
+
+### Ambiente de desenvolvimento
+
+Se você tem MacOS, basta baixar e usar o xcode para emular um sistema iOS. Para windows e linux teremos que usar o sistema Android, com o AVD manager do Android Studio.
+
+Utilize o site da rocketseat ou outra fonte para configurar o SDK: [https://react-native.rocketseat.dev](https://react-native.rocketseat.dev/)
+
 ## Comandos <a name="comandosReactNative" />
 
 Criar projeto:
