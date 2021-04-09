@@ -15,6 +15,7 @@
     4. [CSS](#css)
     5. [Usando a API](#usandoApi)
 3. [React Native](#reactNative)
+    1. [Comandos](#comandosReactNative)
 
 # Ambiente de desenvolvimento <a name="ambienteDesenvolvimento" />
 * NodeJS, Yarn
