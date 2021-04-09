@@ -14,6 +14,7 @@
     3. [Conceitos do ReactJS](#conceitosReact)
     4. [CSS](#css)
     5. [Usando a API](#usandoApi)
+3. [React Native](#reactNative)
 
 # Ambiente de desenvolvimento <a name="ambienteDesenvolvimento" />
 * NodeJS, Yarn
@@ -350,3 +351,6 @@ yarn add cors
 ```jsx
 app.use(cors());
 ```
+
+# Módulo 5 - React Native <a name="reactNative" />
+## Comandos <a name="comandosReactNative" />
