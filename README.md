@@ -429,3 +429,5 @@ npm config set cache C:\tmp\nodejs\npm-cache --global
 ```
 
 Se não conseguiu criar o projeto, recomendo seguir a documentação  [https://reactnative.dev/docs/environment-setup](https://reactnative.dev/docs/environment-setup)
+
+Hoje é o 2° dia configurando o React Native...
