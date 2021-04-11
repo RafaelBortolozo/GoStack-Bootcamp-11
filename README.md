@@ -17,6 +17,7 @@
 3. [React Native](#reactNative)
     1. [Comandos](#comandosReactNative)
     2. [Criando o projeto](#criacaoProjetoRN)
+    3. [Diferenças do ReactJS](#diferencasRN)
 
 # Ambiente de desenvolvimento <a name="ambienteDesenvolvimento" />
 * NodeJS, Yarn
@@ -407,8 +408,22 @@ Instalar todas as dependências:
 yarn
 ```
 
+Iniciar projeto no emulador:
+
+```jsx
+//Android
+npx react-native run-android
+
+//ios
+npx react-native run-ios
+```
+
 ## Criando o projeto <a name="criacaoProjetoRN" />
-Para criar um projeto react native não precisa instalar o react-native-cli, basta criar um projeto usando o npx:
+**OBS:** Os comandos podem não funcionar corretamente por causa do tempo (anotações feitas em 10/04/2021), sempre é recomendado seguir a documentação: [https://reactnative.dev/docs/environment-setup](https://reactnative.dev/docs/environment-setup).
+
+### Como criar
+
+Para criar um projeto React Native não precisa instalar o react-native-cli, basta criar um projeto usando o npx do Node:
 
 ```jsx
 npx react-native init NomeDoProjeto
@@ -428,6 +443,29 @@ Isso aconteceu por causa do espaço em branco no seu nome de usuário, use o seg
 npm config set cache C:\tmp\nodejs\npm-cache --global
 ```
 
-Se não conseguiu criar o projeto, recomendo seguir a documentação  [https://reactnative.dev/docs/environment-setup](https://reactnative.dev/docs/environment-setup)
+### Como executar
 
-Hoje é o 2° dia configurando o React Native...
+Usarei o Android Studio já configurado conforme a documentação do React Native: [https://reactnative.dev/docs/environment-setup](https://reactnative.dev/docs/environment-setup).
+
+1. Abre um dispositivo Android com o AVD Manager;
+2. Abra um novo terminal dentro do projeto;
+3. No terminal digite:
+
+```jsx
+npx react-native run-android
+```
+
+Se tudo ocorreu bem, a aplicação será executada no dispositivo:
+
+![Untitled (8)](https://user-images.githubusercontent.com/62819159/114290818-a6baed80-9a58-11eb-8a7d-d221b131195a.png)
+
+## Diferenças do ReactJS <a name="diferencasRN" />
+Ao comparar ReactJS com o React Native notamos algumas diferenças entre eles. 
+
+No React Native:
+
+- Não trabalha-se com HTML, utilizamos elementos que o React Native exporta.
+- Esses elementos não tem valor semântico, ou seja, uma <View/> por exemplo é usada como container para qualquer coisa.
+- Não existe estilização própria nos elementos, qualquer estilo é feito por CSS (StyleSheet).
+- Todos os componentes possuem por padrão "display: flex".
+- Não tem herança de estilos. Ao aplicar um estilo em um container por exemplo, apenas o container será afetado, o que estiver dentro dele não será estilizado.
