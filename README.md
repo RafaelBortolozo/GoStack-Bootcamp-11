@@ -17,6 +17,7 @@
 3. [React Native](#reactNative)
     1. [Comandos](#comandosReactNative)
     2. [Criando o projeto](#criacaoProjetoRN)
+    3. [Diferenças do ReactJS](#diferencasRN)
 
 # Ambiente de desenvolvimento <a name="ambienteDesenvolvimento" />
 * NodeJS, Yarn
@@ -457,3 +458,14 @@ npx react-native run-android
 Se tudo ocorreu bem, a aplicação será executada no dispositivo:
 
 ![Untitled (8)](https://user-images.githubusercontent.com/62819159/114290818-a6baed80-9a58-11eb-8a7d-d221b131195a.png)
+
+## Diferenças do ReactJS <a name="diferencasRN" />
+Ao comparar ReactJS com o React Native notamos algumas diferenças entre eles. 
+
+No React Native:
+
+- Não trabalha-se com HTML, utilizamos elementos que o React Native exporta.
+- Esses elementos não tem valor semântico, ou seja, uma <View/> por exemplo é usada como container para qualquer coisa.
+- Não existe estilização própria nos elementos, qualquer estilo é feito por CSS (StyleSheet).
+- Todos os componentes possuem por padrão "display: flex".
+- Não tem herança de estilos. Ao aplicar um estilo em um container por exemplo, apenas o container será afetado, o que estiver dentro dele não será estilizado.
