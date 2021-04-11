@@ -18,6 +18,7 @@
     1. [Comandos](#comandosReactNative)
     2. [Criando o projeto](#criacaoProjetoRN)
     3. [Diferenças do ReactJS](#diferencasRN)
+    4. [Usando a API](#usandoApiRN)
 
 # Ambiente de desenvolvimento <a name="ambienteDesenvolvimento" />
 * NodeJS, Yarn
@@ -418,6 +419,12 @@ npx react-native run-android
 npx react-native run-ios
 ```
 
+Axios: 
+
+```jsx
+yarn add axios
+```
+
 ## Criando o projeto <a name="criacaoProjetoRN" />
 **OBS:** Os comandos podem não funcionar corretamente por causa do tempo (anotações feitas em 10/04/2021), sempre é recomendado seguir a documentação: [https://reactnative.dev/docs/environment-setup](https://reactnative.dev/docs/environment-setup).
 
@@ -469,3 +476,27 @@ No React Native:
 - Não existe estilização própria nos elementos, qualquer estilo é feito por CSS (StyleSheet).
 - Todos os componentes possuem por padrão "display: flex".
 - Não tem herança de estilos. Ao aplicar um estilo em um container por exemplo, apenas o container será afetado, o que estiver dentro dele não será estilizado.
+
+## Usando a API <a name="usandoApiRN" />
+O módulo "Axios" é responsável por fazer as chamadas na API.
+
+```jsx
+yarn add axios
+```
+
+Logo de cara percebemos um problema, qual é a baseURL já que não estamos trabalhando com páginas web? Observe a lista abaixo com os tipos de ambiente de desenvolvimento e suas URLs:
+
+- iOS com emulador: localhost;
+- iOS com físico: IP da máquina;
+- Android com emulador: localhost (adb reverse)
+- Android com emulador: 10.0.2.2 (Android Studio)
+- Android com emulador: 10.0.3.2 (Genymotion)
+- Android com físico: IP da máquina
+
+No meu caso, estou usando Android com emulador com adb reverse. No prompt de comando digite:
+
+```jsx
+adb reverse tcp:<porta do backend> tcp:<porta do backend>
+```
+
+Então a baseURL é a mesma do backend (http://localhost:xxxx)
