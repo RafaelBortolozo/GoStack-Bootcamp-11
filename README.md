@@ -407,8 +407,22 @@ Instalar todas as dependências:
 yarn
 ```
 
+Iniciar projeto no emulador:
+
+```jsx
+//Android
+npx react-native run-android
+
+//ios
+npx react-native run-ios
+```
+
 ## Criando o projeto <a name="criacaoProjetoRN" />
-Para criar um projeto react native não precisa instalar o react-native-cli, basta criar um projeto usando o npx:
+**OBS:** Os comandos podem não funcionar corretamente por causa do tempo (anotações feitas em 10/04/2021), sempre é recomendado seguir a documentação: [https://reactnative.dev/docs/environment-setup](https://reactnative.dev/docs/environment-setup).
+
+### Como criar
+
+Para criar um projeto React Native não precisa instalar o react-native-cli, basta criar um projeto usando o npx do Node:
 
 ```jsx
 npx react-native init NomeDoProjeto
@@ -428,6 +442,18 @@ Isso aconteceu por causa do espaço em branco no seu nome de usuário, use o seg
 npm config set cache C:\tmp\nodejs\npm-cache --global
 ```
 
-Se não conseguiu criar o projeto, recomendo seguir a documentação  [https://reactnative.dev/docs/environment-setup](https://reactnative.dev/docs/environment-setup)
+### Como executar
 
-Hoje é o 2° dia configurando o React Native...
+Usarei o Android Studio já configurado conforme a documentação do React Native: [https://reactnative.dev/docs/environment-setup](https://reactnative.dev/docs/environment-setup).
+
+1. Abre um dispositivo Android com o AVD Manager;
+2. Abra um novo terminal dentro do projeto;
+3. No terminal digite:
+
+```jsx
+npx react-native run-android
+```
+
+Se tudo ocorreu bem, a aplicação será executada no dispositivo:
+
+![Untitled (8)](https://user-images.githubusercontent.com/62819159/114290818-a6baed80-9a58-11eb-8a7d-d221b131195a.png)
