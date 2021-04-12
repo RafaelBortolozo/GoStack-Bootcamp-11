@@ -144,17 +144,17 @@ Toda requisição exibirá um código HTTP com 3 dígitos numéricos indicando o
 - 5xx: Erros no servidor
 
 ## Middleware <a name="middleware" />
-Middleware é uma função que é um interceptador de requisições, ele consegue interromper uma requisição e alterar os dados da requisição. Ele pode ser acionado em todas as requisições.
+* Middleware é uma função que é um interceptador de requisições, ele consegue interromper uma requisição e alterar os dados da requisição. Ele pode ser acionado em todas as requisições.
 
-Uma função middleware usa os parametros (request, response, next)
+* Uma função middleware usa os parametros (request, response, next)
 
-Podemos dizer que as rotas também são middleware por conterem request e response
+* Podemos dizer que as rotas também são middleware por conterem request e response.
 
-Os middlewares que não são rotas normalmente terão o argumento next, que executa uma rota depois de ter sido acionado
+* Os middlewares que não são rotas normalmente terão o argumento next, que executa uma rota depois de ter sido acionado.
 
-Seu principal objetivo é interceptar uma rota para verificar ou executar uma função essencial.
+* Seu principal objetivo é interceptar uma rota para verificar ou executar uma função essencial.
 
-Podemos usar os middleware passando a função nas rotas, mas tem uma forma mais fácil:
+* Podemos usar os middleware passando a função nas rotas, mas tem uma forma mais fácil:
 
 ```jsx
 app.use('/projects/:id', validateProjectId) //Exemplo
