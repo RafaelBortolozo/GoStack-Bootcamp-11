@@ -14,11 +14,12 @@
     3. [Conceitos do ReactJS](#conceitosReact)
     4. [CSS](#css)
     5. [Usando a API](#usandoApi)
-3. [React Native](#reactNative)
+4. [React Native](#reactNative)
     1. [Comandos](#comandosReactNative)
     2. [Criando o projeto](#criacaoProjetoRN)
     3. [Diferenças do ReactJS](#diferencasRN)
     4. [Usando a API](#usandoApiRN)
+5. [Typescript](#typescript)
 
 # Ambiente de desenvolvimento <a name="ambienteDesenvolvimento" />
 * NodeJS, Yarn
@@ -500,3 +501,12 @@ adb reverse tcp:<porta do backend> tcp:<porta do backend>
 ```
 
 Então a baseURL é a mesma do backend (http://localhost:xxxx)
+
+# Typescript <a name="typescript" />
+O typescript é uma linguagem de programação totalmente baseado em javascript. Ela adiciona a tipagem no código e dá acesso as atualizações mais modernas do javascript que o node e os browsers ainda não entendem, através da conversão de código, que nem acontece com o Babel.
+
+Tanto os browsers como o node não entendem typescript, então é feito a conversão para javascript.
+
+Com a adição da tipagem, o programador e o editor conhece o formato de um objeto que foi recebido como parâmetro de uma função por exemplo. Observe a imagem a seguir:
+
+![Untitled (9)](https://user-images.githubusercontent.com/62819159/114489460-8cfce000-9be9-11eb-94f5-c20ebaa4b6d8.png)
