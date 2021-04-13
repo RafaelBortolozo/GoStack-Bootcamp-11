@@ -507,6 +507,6 @@ O typescript é uma linguagem de programação totalmente baseado em javascript.
 
 Tanto os browsers como o node não entendem typescript, então é feito a conversão para javascript.
 
-Com a adição da tipagem, o programador e o editor conhece o formato de um objeto que foi recebido como parâmetro de uma função por exemplo. Observe a imagem a seguir:
+Com a adição da tipagem, o programador e o editor conhece o formato de uma variável que foi recebido como parâmetro de uma função por exemplo. Observe a imagem a seguir:
 
 ![Untitled (9)](https://user-images.githubusercontent.com/62819159/114489460-8cfce000-9be9-11eb-94f5-c20ebaa4b6d8.png)
