@@ -20,6 +20,7 @@
     3. [Diferenças do ReactJS](#diferencasRN)
     4. [Usando a API](#usandoApiRN)
 5. [Typescript](#typescript)
+    1. [Comandos](#comandosTypescript)
 
 # Ambiente de desenvolvimento <a name="ambienteDesenvolvimento" />
 * NodeJS, Yarn
@@ -510,3 +511,33 @@ Tanto os browsers como o node não entendem typescript, então é feito a conver
 Com a adição da tipagem, o programador e o editor conhece o formato de uma variável que foi recebido como parâmetro de uma função por exemplo. Observe a imagem a seguir:
 
 ![Untitled (9)](https://user-images.githubusercontent.com/62819159/114489460-8cfce000-9be9-11eb-94f5-c20ebaa4b6d8.png)
+
+## Comandos <a name="comandosTypescript" />
+Para usar typescript:
+
+```jsx
+yarn add typescript -D
+```
+
+Será instalada como dependência de desenvolvimento, pois o typescript é desnecessário quando a aplicação está online.
+
+O typescript será usado no backend, então instale o Express:
+
+```jsx
+yarn add express
+
+//declaração de tipagem do express, pois a IDE do vsCode não fornece auto-complete
+yarn add -D @types/express
+```
+
+Gerar JSON de configurações do typescript:
+
+```jsx
+yarn tsc --init
+```
+
+Para rodar, precisa converter o código typescript para javascript e depois executar com node:
+
+```jsx
+yarn tsc
+```
