@@ -541,3 +541,17 @@ Para rodar, precisa converter o código typescript para javascript e depois exec
 ```jsx
 yarn tsc
 ```
+
+## Quando colocar tipagem? <a name="usarTipagem" />
+Utilizado principalmente quando não há auto-complete ou quando o próprio Visual Studio Code avisa que a tipagem de algo é <any>. 
+
+Quando é importado o express dentro de um arquivo por exemplo, haverá auto-complete nele, mas caso querermos manipular as funções do express sem importa-lo, não haverá auto-complete logo a tipagem é essencial.
+
+Digamos que tenha, em um arquivo isolado, uma função que faz requisição e resposta, não basta importar o express, precisamos importar as tipagens (o tipo de variável). Observe a imagem abaixo:
+
+![Untitled (10)](https://user-images.githubusercontent.com/62819159/115331686-bc24cb80-a16c-11eb-8ffe-6fe11ecf9cf7.png)
+
+Como foi colocado a tipagem das variáveis request e response do express, o auto-complete está habilitado:
+
+![Untitled (11)](https://user-images.githubusercontent.com/62819159/115331714-ccd54180-a16c-11eb-974f-c393e80b43fe.png)
+
