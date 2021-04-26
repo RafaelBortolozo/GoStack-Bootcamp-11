@@ -21,6 +21,8 @@
     4. [Usando a API](#usandoApiRN)
 5. [Typescript](#typescript)
     1. [Comandos](#comandosTypescript)
+    2. [Quando colocar tipagem?](#quandoColocarTipagem)
+    3. [Tipagem de objetos](#tipagemObjetos)
 
 # Ambiente de desenvolvimento <a name="ambienteDesenvolvimento" />
 * NodeJS, Yarn
@@ -542,7 +544,7 @@ Para rodar, precisa converter o código typescript para javascript e depois exec
 yarn tsc
 ```
 
-## Quando colocar tipagem? <a name="usarTipagem" />
+## Quando colocar tipagem? <a name="quandoColocarTipagem" />
 Utilizado principalmente quando não há auto-complete ou quando o próprio Visual Studio Code avisa que a tipagem de algo é <any>. 
 
 Quando é importado o express dentro de um arquivo por exemplo, haverá auto-complete nele, mas caso querermos manipular as funções do express sem importa-lo, não haverá auto-complete logo a tipagem é essencial.
@@ -555,3 +557,16 @@ Como foi colocado a tipagem das variáveis request e response do express, o auto
 
 ![Untitled (11)](https://user-images.githubusercontent.com/62819159/115331714-ccd54180-a16c-11eb-974f-c393e80b43fe.png)
 
+## Tipagem de objetos <a name="tipagemObjetos" />
+
+Veja a imagem abaixo:
+
+![Untitled (12)](https://user-images.githubusercontent.com/62819159/116019652-144f4800-a61b-11eb-8597-6a3821983a4f.png)
+
+Esta função retorna os dados de um usuário, porém não foi definido a tipagem dos dados no parâmetro da função. Uma forma é definindo dentro do campo dos parâmetros:
+![Untitled (13)](https://user-images.githubusercontent.com/62819159/116019752-4a8cc780-a61b-11eb-9df7-6b4165d4325d.png)
+
+Caso seja passado algum parâmetro que não segue a tipagem estabelecida, ocorre um erro.
+
+Podemos definir a tipagem dos dados de um objeto usando o "interface":
+![Untitled (14)](https://user-images.githubusercontent.com/62819159/116019795-64c6a580-a61b-11eb-9f2d-2860c6da23ab.png)
