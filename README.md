@@ -544,6 +544,26 @@ Para rodar, precisa converter o código typescript para javascript e depois exec
 yarn tsc
 ```
 
+Forma eficiente de converter código typescript para javascript automaticamente:
+
+```jsx
+yarn add ts-node-dev -D
+```
+
+Plugin para manter um padrão de código entre os desenvolvedores:
+
+```jsx
+yarn add eslint -D 
+
+yarn eslint --init
+```
+
+Prettier: 
+
+```jsx
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D 
+```
+
 ## Quando colocar tipagem? <a name="quandoColocarTipagem" />
 Utilizado principalmente quando não há auto-complete ou quando o próprio Visual Studio Code avisa que a tipagem de algo é <any>. 
 
